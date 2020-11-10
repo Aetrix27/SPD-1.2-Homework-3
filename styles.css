@@ -1,0 +1,25 @@
+.pricing_cards{
+  border: black 1px;
+}
+
+.hero-background-img {
+  position: relative;
+  background-image: url("keyboard.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.8;
+}
+
+
+#secondImage{
+  position: relative;
+  background-image: url("greatkeyboard.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.8;
+}
+
+#smallIcon{
+  width: 50;
+  height: 50px;
+}

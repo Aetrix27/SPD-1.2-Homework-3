@@ -1,0 +1,365 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CustomKeys</title>
+
+  <!-- BOOTSTRAP -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <!-- BOOTSTRAP THEME -->
+  <link rel="stylesheet" href="https://bootswatch.com/13/sandstone/bootstrap.min.css">
+
+  <!-- CUSTOM STYLES -->
+
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  <div class="pos-f-t">
+    <div class="collapse" id="navbarToggleExternalContent">
+      <div class="bg-dark p-4">
+        <li class="nav-item active"><a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a></li>
+          <li class="nav-item active"><a class="nav-link" href="pricing.html">Pricing <span class="sr-only"></span></a></li>
+          <li class="nav-item active"><a class="nav-link" href="features.html">Discover <span class="sr-only"></span></a></li>
+
+      </div>
+    </div>
+    <nav class="navbar navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">CustomKeys</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+  </div>
+
+
+  <!-- HERO -->
+  <div class="jumbotron text-center hero-background-img">
+  </div>
+
+  <!-- BENEFITS -->
+  <div class="container mb-5 mt-5">
+    <!-- THE BENEFITS COLUMNS -->
+    <h3 class = "text-center">Pricing</h3>
+
+    <div class="row m-5">
+      <div class="card col-md-4">
+        <h3>88 Keycaps: </h2>
+        <h2>$40</h2>
+
+      </div>
+      <div class="card col-md-4">
+        <h3>Gold Standard Cherry MX: </h2>
+        <h2>$80</h2>
+        <p class="lead">
+      </div>
+      <div class="card col-md-4">
+        <h3>Keyboard with Custom Keys: </h2>
+        <h2>$120</h2>
+        <p class="lead">
+      </div>
+    </div>
+  </div>
+
+  <div class="row m-5">
+    <div class="col-md-3">
+      <h3>Cherry MX Red</h3>
+      <!-- Button trigger modal -->
+      <img src="standardKeyboard.jpg" class="img-fluid rounded">
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        Add To Cart
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" onclick="addCart()">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                Cherry MX Black Keyboard
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="col-md-3">
+      <h3>Cherry MX Black</h3>
+      <!-- Button trigger modal -->
+      <img src="standardKeyboard.jpg" class="img-fluid rounded">
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        Add To Cart
+      </button>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" onclick="addCart()">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              Cherry MX Black Keyboard
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-3">
+    <!-- Button trigger modal -->
+    <h3>Cherry MX Blue</h3>
+    <img src="standardKeyboard.jpg" class="img-fluid rounded">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+      Add To Cart
+    </button>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" onclick="addCart()">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            Cherry MX Blue Keyboard
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+      </div>
+    </div>
+
+
+        <div class="col-md-3">
+          <h3>Cherry MX Black</h3>
+          <!-- Button trigger modal -->
+          <img src="standardKeyboard.jpg" class="img-fluid rounded">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+            Add To Cart
+          </button>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" onclick="addCart()">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                  Cherry MX Black Keyboard
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+
+<div class="row m-5">
+  <div class="col-md-3">
+      <h3>Cherry MX Black</h3>
+    <!-- Button trigger modal -->
+    <img src="standardKeyboard.jpg" class="img-fluid rounded">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+      Add To Cart
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" onclick="addCart()">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              Cherry MX Black Keyboard
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="col-md-3">
+    <!-- Button trigger modal -->
+    <h3>Cherry MX Red</h3>
+    <img src="standardKeyboard.jpg" class="img-fluid rounded">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+      Add To Cart
+    </button>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" onclick="addCart()">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            Cherry MX Red Keyboard
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-3">
+    <h3>Cherry MX Red</h3>
+  <!-- Button trigger modal -->
+  <img src="standardKeyboard.jpg" class="img-fluid rounded">
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    Add To Cart
+  </button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" onclick="addCart()">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          Cherry MX Red Keyboard
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+    </div>
+  </div>
+
+      <div class="col-md-3">
+        <h3>Cherry MX Red</h3>
+        <!-- Button trigger modal -->
+        <img src="standardKeyboard.jpg" class="img-fluid rounded">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+          Add To Cart
+        </button>
+
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" onclick="addCart()">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                Cherry MX Red Keyboard
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+
+  <!-- CALL TO ACTION -->
+  <div class="jumbotron text-center mb-0">
+  <p class="lead mb-4">Get notified about our deals!</p>
+  <div class="d-flex justify-content-center">
+    <form action="#" class='form-inline'>
+      <input type="text" class="form-control mb-2 mr-sm-2" placeholder="Name"/>
+      <button type="submit" class="btn btn-primary mb-2">Submit</button>
+    </form>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div class="bg-secondary p-5 text">
+  <div class="row">
+    <div class="col-lg-2">
+      <p class = "h6">What's New</p>
+      <p>2020 CustomKeys</p>
+
+    </div>
+
+    <div class="col-lg-2">
+        <p class = "h6">Facebook</p>
+        <img src="fblogo.png" class="img-fluid rounded" id = "smallIcon">
+
+    </div>
+    <div class="col-lg-2">
+      <p class = "h6">Instagram</p>
+      <img src="instalogo.png" class="img-fluid rounded" id = "smallIcon">
+
+    </div>
+    <div class="col-lg-2">
+      <p class = "h6">Twitter</p>
+      <img src="twitterlogo.png" class="img-fluid rounded" id = "smallIcon">
+
+    </div>
+    <div class="col-lg-2">
+      <p class = "h6">YouTube</p>
+      <img src="ytlogo.png" class="img-fluid rounded" id = "smallIcon">
+
+    </div>
+    <div class="col-lg-2">
+      <p class = "h6">Company</p>
+      <p>Careers</p>
+
+    </div>
+
+  </div>
+</div>
+
+
+</body>
+</html>
