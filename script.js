@@ -4,6 +4,16 @@ function addCart(){
 
 }
 
+$('.modalShow').click(function(event){
+    event.preventDefault();
+    var e = $(this);
+    var title = e.data('title');
+    var body = e.data('value');
+    $('.modal-title').html(title);
+    $('.modal-body').html(body);
+    $('#myModal').modal('show');
+});
+
 function showAlert(message, alertType){
 
   $('exampleAlert').append( $('exampleAlert')).append(
